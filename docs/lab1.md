@@ -1,0 +1,3 @@
+- L’ordre des instructions compte pour le cache : avec COPY . . avant pip install, un changement du code peut relancer l’installation des dépendances.
+- J’utilise une base slim et un .dockerignore pour alléger l’image : 2,91 Go pour l’image naïve, contre 602 Mo pour l’image finale.
+- Avec USER 10001:10001, je lance l’application sans être root et j’applique le principe du moindre privilège.
