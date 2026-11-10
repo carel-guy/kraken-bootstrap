@@ -25,7 +25,7 @@ jobs:
             run: ruff check .
 
           - name: Lancer Pytest
-            run: pytest -q --junitxml=reports/jnit.xml
+            run: pytest -q --junitxml=reports/junit.xml
         
           - name: Upload Test Report
             if: always()
